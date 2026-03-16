@@ -9,11 +9,11 @@ import { ourFileRouter } from "./api/uploadthing/core";
 
 export const metadata: Metadata = {
   title: {
-    template: "%s | Sociify",
-    default: "Sociify",
+    template: "%s | BUGEMA Engage",
+    default: "BUGEMA Engage",
   },
   description:
-    "Suggests socializing and connecting, with a modern app-like ending.",
+    "BUGEMA Engage - Connect, share, and collaborate with the BUGEMA community.",
 };
 
 export default function RootLayout({

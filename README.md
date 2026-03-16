@@ -1,4 +1,4 @@
-# NextJS Social Media App
+# BUGEMA Engage
 
 A modern, feature-rich social networking application built with Next.js, Prisma, and TypeScript. This project leverages cutting-edge web technologies to deliver a fast, responsive, and scalable social media platform.
 
@@ -17,7 +17,7 @@ A modern, feature-rich social networking application built with Next.js, Prisma,
 
 ## Overview
 
-NextJS Social Media App serves as a comprehensive social networking solution where users can create posts, interact with content, follow peers, and explore trending topics. With robust APIs, seamless authentication, and dynamic rendering, this application is optimized for both performance and scalability.
+BUGEMA Engage serves as a comprehensive social networking solution where users can create posts, interact with content, follow peers, and explore trending topics. With robust APIs, seamless authentication, and dynamic rendering, this application is optimized for both performance and scalability.
 
 ## Features
 
@@ -50,18 +50,22 @@ NextJS Social Media App serves as a comprehensive social networking solution whe
 ### Installation
 
 1. **Clone the Repository**
+
    ```bash
-   git clone https://github.com/Mustafaguzel2/nextjs-social-media-app.git
-   cd nextjs-social-media-app
+   git clone https://github.com/alexis-mupole/bugema-engage.git
+   cd bugema-engage
    ```
 
 2. **Install Dependencies**
 
    If you encounter peer dependency issues, use the following command:
+
    ```bash
    npm install --legacy-peer-deps
    ```
+
    Alternatively, if dependencies have been fixed and updated, a regular install might work:
+
    ```bash
    npm install
    ```
@@ -69,6 +73,7 @@ NextJS Social Media App serves as a comprehensive social networking solution whe
 3. **Setup Environment Variables**
 
    Create a `.env` file in the root directory and configure the following variables:
+
    ```
    DATABASE_URL=your_database_connection_url
    STREAM_API_KEY=your_stream_api_key
@@ -80,6 +85,7 @@ NextJS Social Media App serves as a comprehensive social networking solution whe
 4. **Run Database Migrations**
 
    After configuring your database, run:
+
    ```bash
    npx prisma migrate dev
    ```
@@ -87,14 +93,17 @@ NextJS Social Media App serves as a comprehensive social networking solution whe
 5. **Run the Development Server**
 
    Start the app:
+
    ```bash
    npm run dev
    ```
+
    Open [http://localhost:3000](http://localhost:3000) in your browser to see the application in action.
 
 ## Environment Variables
 
 Ensure all required environment variables are defined. Some key variables include:
+
 - `DATABASE_URL` – Your database connection string.
 - `STREAM_API_KEY` and `STREAM_API_SECRET` – Credentials for the Stream Chat API.
 - Additional secrets needed for authentication and other integrations.
@@ -106,6 +115,7 @@ This project uses Prisma as its ORM. After setting your `DATABASE_URL`, generate
 ## Deployment
 
 This project is optimized for deployment on Vercel. For a production build, ensure you:
+
 - Run `npm run build` locally.
 - Address any peer dependency issues using `npm install --legacy-peer-deps` if necessary.
 - Update any vulnerable packages using `npm audit fix` or `npm audit fix --force` after thorough local testing.
